@@ -1,0 +1,19 @@
+.card{
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+.card-title{
+    text-align: left;
+}
+
+.center{
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.center img{
+    height: 200px;
+    width: 200px;
+}
+

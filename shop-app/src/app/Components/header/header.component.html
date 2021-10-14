@@ -1,0 +1,17 @@
+<header>
+    <div class="navbar bg-primary shadow-sm">
+        <div class="navbar-brand align-item-center d-flex">
+            <i class="fas fa-shipping-fast" style="color: white; font-size:2rem;" [routerLink]="['products']"></i>
+            &nbsp;
+            <strong style="color: white; font-size: 1.5rem;" [routerLink]="['products']">E-mart</strong>
+            <div class="form-group">
+                <input type="text"  class="form-control" placeholder="search product">
+            </div>
+            <span class="fas fa-search search-icon"></span>
+        </div>
+        <button class="btn btn-primary" [routerLink] = "['cart']">
+            <i class="fas fa-cart-plus" style="font-size: 1.5rem;"></i>
+            <div class="badge bg-danger">2</div>
+        </button>
+    </div>
+</header>
