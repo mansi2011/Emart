@@ -1,3 +1,4 @@
+import { ThrowStmt } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { CartService } from 'src/app/Service/cart.service';
 
@@ -9,12 +10,18 @@ import { CartService } from 'src/app/Service/cart.service';
 export class HeaderComponent implements OnInit {
 
   totalItem : number = 0;
+  searchTerm : string ="";
   constructor(private cartSerice : CartService) { }
 
   ngOnInit(): void {
     this.cartSerice.getProducts().subscribe(res => {
       this.totalItem = res.length;
     })
+  }
+
+  search(event:any){
+    this.searchTerm = (event.target as HTMLInputElement).value;
+    this.cartSerice.search.next(this.searchTerm);
   }
 
 
