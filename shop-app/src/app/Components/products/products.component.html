@@ -35,7 +35,7 @@
                 <h5 style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;max-width: 100ch;">
                     {{product.title}}</h5>
                 <p style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;max-width: 200ch;">{{product.description}}</p>
-                <p><strong>Price:</strong> {{product.price}} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ⭐<span>{{product.rating.rate}}</span></p>
+                <p><strong>Price:</strong> ${{product.price}} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ⭐<span>{{product.rating.rate}}</span></p>
                 <button class="btn btn-primary" (click)="addToCart(product)">Add to cart</button>
             </div>
         </ng-container>
